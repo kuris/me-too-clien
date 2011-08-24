@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:focusable="true"
+        android:focusableInTouchMode="true">
+	<LinearLayout android:id="@+id/board_detail_main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+		<ScrollView	android:id="@+id/board_detail_main_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+				<LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent">
+					<TextView android:layout_height="wrap_content" android:id="@+id/TitleView" 
+						android:layout_weight="1" android:layout_width="fill_parent" android:textSize="18dip" android:paddingTop="5dip" android:paddingBottom="5dip" 
+						android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="제목"></TextView>
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TitleCount" 
+						android:textColor="#FF0000" android:layout_marginRight="5dp" android:text="0"></TextView>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent">
+					<TextView android:layout_height="wrap_content" 
+						android:id="@+id/board_detail_writer_textview"  android:layout_marginLeft="5dp" android:layout_width="wrap_content"/>
+					<ImageView android:layout_height="wrap_content" android:visibility="gone"
+						android:id="@+id/board_detail_writer_imageview"  android:layout_marginLeft="5dp" android:layout_width="wrap_content"/>
+					
+					<TextView android:id="@+id/board_detail_date_text" android:layout_width="fill_parent" android:layout_weight="1"  android:layout_height="wrap_content" 
+						android:gravity="right" android:text="2011-07-01"></TextView>
+					<Button android:id="@+id/board_detail_additional_button" />
+					<Button android:background="@drawable/btn_title_normal" android:id="@+id/board_detail_original_link_button" 
+						android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="원문보기" android:layout_marginRight="5dp" android:textColor="#DADADA"></Button>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/board_detail_center_line1" android:layout_width="fill_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="3dp" android:layout_marginTop="3dp" android:background="#AAAAAA" android:layout_height="5dp"/>
+				<LinearLayout android:id="@+id/board_detail_contents_edit_layout" android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:visibility="gone" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+					<Button android:background="@drawable/btn_title_normal" android:id="@+id/board_detail_update_link_button" 
+						android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="글수정" android:layout_marginRight="5dp" android:textColor="#DADADA"></Button>
+					<Button android:background="@drawable/btn_title_normal" android:id="@+id/board_detail_delete_link_button" 
+					android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="글삭제" android:layout_marginRight="5dp" android:textColor="#DADADA"></Button>
+				</LinearLayout>
+				<WebView android:id="@+id/WebView" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="5dp"
+					android:scrollbars="none" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:scrollbarStyle="outsideOverlay"
+					/>
+				<net.daum.mobilead.MobileAdView
+					android:id="@+id/adview"
+					android:visibility="invisible"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"/>
+				
+				<LinearLayout android:id="@+id/board_detail_reply_layout" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical"></LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</LinearLayout>

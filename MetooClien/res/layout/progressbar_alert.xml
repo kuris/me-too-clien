@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="320dp" android:gravity="center">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content">
+            <TextView android:id="@+id/progressbar_alert_title_textview" android:layout_height="wrap_content" 
+            	android:textColor="#5a4d46" android:textSize="20sp" 
+            	android:text="title" 
+            	android:gravity="center_vertical|center_horizontal" android:paddingTop="5dp" android:background="#FFFFFF" android:layout_width="300dp"></TextView>
+            <ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView1" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout2" android:layout_height="fill_parent" android:orientation="vertical" >
+                	<LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout3" android:background="#FFFFFF" android:orientation="vertical" android:layout_height="wrap_content">
+	                	<ProgressBar android:id="@+id/progressbar_alert_progressbar" 
+	                		style="?android:attr/progressBarStyleHorizontal" 
+	                		android:layout_width="fill_parent" android:layout_height="30dp" android:max="100" android:progress="0" 
+	                		android:layout_marginLeft="10dp" android:layout_marginRight="10dp" 
+	                		android:layout_marginTop="10dp" android:layout_marginBottom="10dp"></ProgressBar>
+                	</LinearLayout>
+                	<LinearLayout android:layout_width="fill_parent" android:layout_height="30dp" 
+                		android:id="@+id/linearLayout4" android:orientation="vertical" android:background="#FFFFFF">
+	                	<TextView android:id="@+id/progressbar_alert_message" android:layout_width="fill_parent" android:layout_marginLeft="10dp" 
+	                		android:layout_marginRight="10dp" android:text="Text" android:textColor="#000000" 
+	                		android:layout_height="wrap_content" android:gravity="center"></TextView>
+                	</LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

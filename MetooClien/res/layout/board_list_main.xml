@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<ListView 
+	    android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1"
+		android:id="@+id/main_listview" android:focusable="false"
+		android:dividerHeight="1dp"/>
+		
+	<LinearLayout android:orientation="vertical" android:id="@+id/board_list_main_sidebar" 
+		android:layout_height="fill_parent" android:layout_width="wrap_content">
+		<Button android:id="@+id/board_list_main_sidebar_show" 
+			android:layout_marginTop="10dp" android:layout_width="20dp" android:layout_height="wrap_content"
+			android:text="&lt;" android:textColor="#d0d0d0" android:background="@drawable/btn_title_normal"
+			android:onClick="onClickSidebarShow"/>
+		<LinearLayout android:id="@+id/board_list_main_sidebar_detail_layout" android:layout_marginTop="10dp"
+			android:layout_height="fill_parent" android:layout_width="wrap_content" android:visibility="gone">
+			<Button android:id="@+id/board_list_main_sidebar_setting" android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="설정" android:textColor="#d0d0d0" android:background="@drawable/btn_title_normal"
+				android:onClick="onClickSettingButton"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

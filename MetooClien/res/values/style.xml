@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="TitlebarBackground">
+	</style>
+	<style name="WindowTitleBar_White" parent="android:style/Theme.Light">
+		<item name="android:windowTitleBackgroundStyle">@style/TitlebarBackground</item>
+		<item name="android:windowTitleSize">40dp</item>
+		<item name="android:windowNoTitle">false</item>
+		<item name="android:divider">#d9d9d9</item>
+		<item name="android:textColor">#000000</item>
+		<item name="android:focusable">false</item>
+	</style>
+		
+	<style name="WindowTitleBar_Black" parent="android:style/Theme.Black">
+		<item name="android:windowTitleBackgroundStyle">@style/TitlebarBackground</item>
+		<item name="android:windowTitleSize">40dp</item>
+		<item name="android:windowNoTitle">false</item>
+		<item name="android:divider">#d9d9d9</item>
+		<item name="android:textColor">#dadada</item>
+		<item name="android:focusable">false</item>
+	</style>
+	
+	<style name="WindowNoTitleBar" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>		
+	</style>
+
+	<style name="AlertDialogActivityNoTitleBar" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@drawable/img_null</item>
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
+
+</resources>

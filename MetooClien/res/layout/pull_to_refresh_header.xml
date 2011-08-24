@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:visibility="visible"
+	android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/pull_to_refresh_header_linearLayout1" 
+	android:orientation="vertical">
+    <RelativeLayout android:layout_height="53dp" android:layout_width="fill_parent" android:background="@drawable/list_bg_03_update"
+    	android:id="@+id/pull_to_refresh_header_relativeLayout1">
+        <TextView android:textSize="12sp" android:layout_centerHorizontal="true" android:layout_height="wrap_content" android:gravity="center"
+        	android:layout_width="fill_parent" android:layout_marginTop="15dp" android:text="@string/pullToRefreshListView_updated" 
+        	android:id="@+id/pull_to_refresh_text"></TextView>
+        <TextView android:textSize="9sp" android:layout_centerHorizontal="true" android:textColor="#9dbcd4" 
+        	android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="32dp" 
+        	android:text="@string/pullToRefreshListView_lastUpdateTime" android:id="@+id/pull_to_refresh_updated_at" android:gravity="center"></TextView>
+        <ProgressBar android:id="@+id/pull_to_refresh_progress" android:layout_width="18dp" android:layout_height="18dp" 
+        	android:layout_alignTop="@+id/pull_to_refresh_text" android:layout_marginTop="-3dp" 
+        	android:layout_marginLeft="90dp" android:visibility="invisible"></ProgressBar>
+    </RelativeLayout>
+</LinearLayout>

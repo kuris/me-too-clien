@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.zinho.clien"
+      android:versionCode="38"
+      android:versionName="1.02">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+ 		
+ 		<activity android:name=".boardlist.BoardListActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".boarditem.BoardItemListActivity" android:label="@string/app_name" 
+        	 android:configChanges="orientation|keyboard">
+		</activity>
+		
+		<activity android:name=".boarditem.BoardSearchDialog" android:label="@string/app_name"
+			android:theme="@style/AlertDialogActivityNoTitleBar" android:launchMode="standard" 
+			android:windowSoftInputMode="adjustResize">
+		</activity>           
+               
+        <activity android:name=".boarddetail.BoardDetailActivity" android:label="@string/app_name"
+        	 android:configChanges="orientation|keyboard">
+        </activity>
+        
+        <activity android:name=".setting.LoginActivity" android:label="@string/app_name">
+        </activity>
+        <activity android:name=".setting.SettingActivity" android:label="@string/app_name">
+        </activity>
+        <activity android:name=".setting.FontSettingActivity" android:label="@string/app_name">
+        </activity>
+        <activity android:name=".boardwrite.BoardWriteActivity" android:label="@string/app_name"
+        	android:configChanges="keyboard|keyboardHidden|orientation">
+        </activity>
+        <activity android:name=".util.FileSelectActivity" android:label="@string/app_name">
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="10"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest> 

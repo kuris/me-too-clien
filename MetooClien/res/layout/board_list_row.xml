@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<RelativeLayout android:id="@+id/board_list_row_mainLayout" android:layout_width="fill_parent"
+	    android:orientation="vertical" android:layout_height="wrap_content">
+		<TextView android:id="@+id/boardlistrow_item_toptext" android:layout_width="fill_parent" 
+			android:gravity="center_vertical" android:layout_height="50dp" android:text="모두의 공원" 
+			android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:singleLine="true" 
+			android:textSize="20sp"/>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="fill_parent">
+		<LinearLayout android:id="@+id/board_write_title_layout" 
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/board_write_title_textview" 
+				android:textSize="18dip" android:paddingTop="5dip" android:paddingBottom="5dip" 
+				android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="제목 : "/>
+			<EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/board_write_title_edittext"
+				android:maxLines="1" android:hint="제목을 입력하세요."/>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/board_write_content_layout" android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="bottom">
+			<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1"
+				android:id="@+id/board_write_content_textview" 
+				android:textSize="18dip" android:paddingTop="5dip" android:paddingBottom="5dip" 
+				android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="본문 : "/>
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:id="@+id/board_write_ca_txt" android:textSize="18dip" android:paddingTop="5dip" android:paddingBottom="5dip"
+				android:text="분류:"/>
+			<Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:id="@+id/board_write_ca_select" android:text="미선택" android:onClick="onClickCaSelect"/>
+		</LinearLayout>
+		<EditText android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/board_write_content_edittext" android:gravity="top" android:hint="내용을 입력하세요."/>
+		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" 
+			android:id="@+id/board_write_fileattach_layout" android:orientation="vertical">
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content" android:id="@+id/board_write_bottom_button_layout" android:layout_width="fill_parent">
+			<Button android:text="첨부파일" android:id="@+id/board_write_attach_button" android:onClick="onClickAttachFileButton" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginRight="50dp"></Button>
+			<Button android:text="저장" android:id="@+id/board_write_send_button" android:onClick="onClickSendButton" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></Button>
+			<Button android:text="취소" android:id="@+id/board_write_cancel_button" android:onClick="onClickCancelButton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
