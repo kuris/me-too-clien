@@ -1,0 +1,16 @@
+#summary One-sentence summary of this page.
+
+= 간략정보 =
+
+나도끌량 어플리케이션 공동개발 공간
+
+
+= 상세정보 =
+
+나도끌량은 안드로이드용 클리앙 커뮤니티 어플리케이션 입니다.
+
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
