@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MetooClien</string>
+    <string name="pullToRefreshListView_updating">목록 업데이트 중</string>
+	<string name="pullToRefreshListView_updateStarting">업데이트 합니다.</string>
+	<string name="pullToRefreshListView_updated">목록 업데이트 완료</string>
+	<string name="pullToRefreshListView_lastUpdateTime">최근 업데이트 : 정보없음</string>
+	<string name="pullToRefreshListView_lastUpdateTimeStr">최근 업데이트 : </string>
+    <string name="board_item_more_updated">터치하면 다음글을 가져옵니다.</string>
+    <string name="board_detail_simpleReply_txt">댓글 작성</string>
+    <string name="board_detail_simpleReply_sendbutton">쓰기</string>
+    
+    <string name="board_list_menu_reload">새로고침</string>
+    <string name="board_list_menu_login">로그인</string>
+    <string name="board_list_menu_logout">로그아웃</string>
+    <string name="board_list_menu_hidetitlebar">타이틀 숨기기</string>
+    <string name="board_list_menu_showtitlebar">타이틀 보기</string>
+    <string name="board_list_menu_search">검색</string>
+    <string name="board_writer_ca_name">분류 선택</string>
+    
+    <string name="login_main_failmsg">ID/비밀번호 인증에 실패 했습니다.\n다시 입력해 주세요.</string>
+</resources>

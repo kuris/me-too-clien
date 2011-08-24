@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/board_list_menu_reload" android:title="@string/board_list_menu_reload"></item>
+    <item android:id="@+id/board_list_menu_login" android:title="@string/board_list_menu_login"></item>
+    <item android:id="@+id/board_list_menu_setting" android:title="설정"></item>
+    <item android:id="@+id/board_list_menu_hide_titlebar" android:title="@string/board_list_menu_hidetitlebar"></item>
+</menu>

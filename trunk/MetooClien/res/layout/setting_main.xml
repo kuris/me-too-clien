@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="#eeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+    <ScrollView android:id="@+id/scrollView1" android:layout_height="fill_parent" android:layout_width="fill_parent"
+    	android:fadingEdge="none">
+        <LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" android:id="@+id/setting_main_linearLayout">
+            <TextView android:layout_width="wrap_content" android:textColor="#000000" android:textSize="14.66sp" android:layout_marginLeft="13.3dp" 
+            	android:layout_height="wrap_content" android:id="@+id/setting_main_title_textview1" android:layout_marginTop="20dp" android:text="로그인 설정"></TextView>
+            <LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" 
+            		android:id="@+id/linearLayout2" android:layout_marginTop="10dp" android:layout_marginLeft="13.3dp" android:layout_marginRight="13.3dp">
+                <RelativeLayout android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal" android:id="@+id/l2_relativeLayout1" android:layout_width="fill_parent">
+                    <ImageView android:layout_height="wrap_content" android:id="@+id/l02_r01_imageView1" android:background="@drawable/box_05" 
+                    	android:onClick="onClickButtonLoginSetting" android:layout_width="fill_parent"></ImageView>
+                    <ImageView android:layout_height="wrap_content" android:background="@drawable/arrow_04" android:layout_width="wrap_content" 
+                    	android:layout_centerVertical="true" android:layout_marginRight="10dp" android:id="@+id/l02_r01_imageView2" 
+                    	android:layout_alignRight="@+id/l02_r01_imageView1"></ImageView>
+                    <TextView android:layout_height="wrap_content" android:textColor="#191919" android:layout_width="wrap_content" 
+                    	android:layout_marginLeft="13.3dp" android:textSize="17dp" android:layout_centerVertical="true" android:id="@+id/l02_r01_textView1" android:text="로그인 정보"/>
+                    <TextView android:layout_height="wrap_content" android:textColor="#191919" android:layout_width="wrap_content" 
+                    	android:layout_centerVertical="true" android:id="@+id/setting_main_logininfo_textview" android:layout_toLeftOf="@id/l02_r01_imageView2" 
+                    	android:textSize="16sp" android:layout_marginRight="10dip" android:text="Clien ID"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:textColor="#000000" android:textSize="14.66sp" android:layout_marginLeft="13.3dp" 
+            	android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="화면 설정 정보"></TextView>
+            <LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginTop="10dp" android:layout_marginLeft="13.3dp" android:layout_marginRight="13.3dp">
+            	<RelativeLayout android:layout_gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/setting_main_titlebar_imageView1" android:layout_height="wrap_content" android:background="@drawable/box_05" android:layout_width="fill_parent"/>
+                    <TextView android:layout_height="wrap_content" android:textColor="#191919" android:layout_width="wrap_content" android:layout_marginLeft="13.3dp" 
+                    	android:textSize="17dp" android:layout_centerVertical="true" android:text="상단바 숨기기 "/>
+                    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerVertical="true" android:id="@+id/setting_main_titlebar_checkbox" 
+                    	android:layout_alignRight="@+id/setting_main_titlebar_imageView1" android:layout_marginRight="10dp" android:textSize="16sp"/>
+                </RelativeLayout>
+                
+                <RelativeLayout android:layout_gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/setting_main_theme_imageView2" android:layout_height="wrap_content" android:background="@drawable/box_05" android:layout_width="fill_parent"/>
+                    <TextView android:layout_height="wrap_content" android:textColor="#191919" android:layout_width="wrap_content" android:layout_marginLeft="13.3dp" 
+                    	android:textSize="17dp" android:layout_centerVertical="true" android:text="블랙 Theme 사용 "/>
+                    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerVertical="true" android:id="@+id/setting_main_theme_checkbox" 
+                    	android:layout_alignRight="@+id/setting_main_theme_imageView2" android:layout_marginRight="10dp" android:textSize="16sp"/>
+                </RelativeLayout>
+                
+                <RelativeLayout android:layout_gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/setting_main_theme_imageView3" android:layout_height="wrap_content" android:background="@drawable/box_05" android:layout_width="fill_parent"/>
+                    <TextView android:layout_height="wrap_content" android:textColor="#191919" android:layout_width="wrap_content" android:layout_marginLeft="13.3dp" 
+                    	android:textSize="17dp" android:layout_centerVertical="true" android:text="제스쳐 사용"/>
+                    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerVertical="true" android:id="@+id/setting_main_gesture_checkbox" 
+                    	android:layout_alignRight="@+id/setting_main_theme_imageView3" android:layout_marginRight="10dp" android:textSize="16sp"/>
+                </RelativeLayout>
+
+				<RelativeLayout android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal" android:id="@+id/setting_main_font_layout" android:layout_width="fill_parent">
+                    <ImageView android:layout_height="wrap_content" android:id="@+id/setting_main_font_img1" android:background="@drawable/box_05" 
+                    	android:onClick="onClickButtonFontSetting" android:layout_width="fill_parent"></ImageView>
+                    <ImageView android:layout_height="wrap_content" android:background="@drawable/arrow_04" android:layout_width="wrap_content" 
+                    	android:layout_centerVertical="true" android:layout_marginRight="10dp" android:id="@+id/setting_main_font_img2" 
+                    	android:layout_alignRight="@+id/setting_main_font_img1"></ImageView>
+                    <TextView android:layout_height="wrap_content" android:textColor="#191919" android:layout_width="wrap_content" 
+                    	android:layout_marginLeft="13.3dp" android:textSize="17dp" android:layout_centerVertical="true" android:id="@+id/setting_main_font_txt" android:text="폰트 크기 설정"/>
+                    <TextView android:layout_height="wrap_content" android:textColor="#191919" android:layout_width="wrap_content" 
+                    	android:layout_centerVertical="true" android:id="@+id/setting_main_font_textview" android:layout_toLeftOf="@id/setting_main_font_img2" 
+                    	android:textSize="16sp" android:layout_marginRight="10dip" android:text=""/>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:textColor="#000000" android:textSize="14.66sp" android:layout_marginLeft="13.3dp" 
+            	android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="게시물 설정 정보"></TextView>
+            <LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginTop="10dp" android:layout_marginLeft="13.3dp" android:layout_marginRight="13.3dp">
+            	<RelativeLayout android:layout_gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/setting_main_contents_imageView1" android:layout_height="wrap_content" android:background="@drawable/box_05" android:layout_width="fill_parent"/>
+                    <TextView android:layout_height="wrap_content" android:textColor="#191919" android:layout_width="wrap_content" android:layout_marginLeft="13.3dp" 
+                    	android:textSize="17dp" android:layout_centerVertical="true" android:text="사진 자동 보기"/>
+                    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerVertical="true" android:id="@+id/setting_main_contents_imageview_checkbox" 
+                    	android:layout_alignRight="@+id/setting_main_contents_imageView1" android:layout_marginRight="10dp" android:textSize="16sp"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/setting_main_contents_imageView2" android:layout_height="wrap_content" android:background="@drawable/box_05" android:layout_width="fill_parent"/>
+                    <TextView android:layout_height="wrap_content" android:textColor="#191919" android:layout_width="wrap_content" android:layout_marginLeft="13.3dp" 
+                    	android:textSize="17dp" android:layout_centerVertical="true" android:text="플래쉬 자동 보기"/>
+                    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerVertical="true" android:id="@+id/setting_main_contents_flashview_checkbox" 
+                    	android:layout_alignRight="@+id/setting_main_contents_imageView2" android:layout_marginRight="10dp" android:textSize="16sp"/>
+                </RelativeLayout>
+				<RelativeLayout android:layout_gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/setting_main_theme_imageView5" android:layout_height="wrap_content" android:background="@drawable/box_05" android:layout_width="fill_parent"/>
+                    <TextView android:layout_height="wrap_content" android:textColor="#191919" android:layout_width="wrap_content" android:layout_marginLeft="13.3dp" 
+                    	android:textSize="17dp" android:layout_centerVertical="true" android:text="게시글 제목 여러줄 보기"/>
+                    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerVertical="true" android:id="@+id/setting_main_2line_checkbox" 
+                    	android:layout_alignRight="@+id/setting_main_theme_imageView5" android:layout_marginRight="10dp" android:textSize="16sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+			<TextView android:layout_width="wrap_content" android:textColor="#000000" android:textSize="14.66sp" android:layout_marginLeft="13.3dp" 
+            	android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="기타 정보"></TextView>
+            <LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginTop="10dp" android:layout_marginLeft="13.3dp" android:layout_marginRight="13.3dp">
+				<RelativeLayout android:layout_gravity="center_vertical|center_horizontal" android:id="@+id/l04_relativeLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_height="wrap_content" android:background="@drawable/box_05" android:id="@+id/l04_imageView1" android:layout_width="fill_parent"></ImageView>
+                    <TextView android:layout_height="wrap_content" android:textColor="#191919" android:layout_width="wrap_content" android:layout_marginLeft="13.3dp" android:textSize="17dp" android:layout_centerVertical="true" android:text="버전정보 " android:id="@+id/l04_textView1"></TextView>
+                    <TextView android:layout_height="wrap_content" android:text="v 0.3" android:textColor="#d81400" android:layout_width="wrap_content" android:layout_centerVertical="true" android:id="@+id/setting_main_version_textview" android:layout_alignRight="@+id/l04_imageView1" android:layout_marginRight="10dp" android:textSize="16sp"></TextView>
+                </RelativeLayout>
+			</LinearLayout>
+        </LinearLayout>
+ 
+    </ScrollView>
+</LinearLayout>

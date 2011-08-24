@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content">
+<RelativeLayout android:id="@+id/board_item_row_main_layout" android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" android:orientation="vertical">
+	<LinearLayout android:id="@+id/boardtitlerow_linearlayout1" android:layout_height="wrap_content" android:layout_width="fill_parent" 
+		android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="5dp">
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" 
+			android:id="@+id/BoardTitle" android:singleLine="true"
+			android:textSize="18sp" android:text="나도 클리앙 리스트 화면 - 제목의 길이가 길어질 경우..."></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			android:text="12" android:id="@+id/BoardCnt" android:paddingLeft="5dp" android:textColor="#FF0000" android:textSize="14sp"></TextView>
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/boardtitlerow_linearlayout2" android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_below="@id/boardtitlerow_linearlayout1" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:paddingBottom="5dp">
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/board_item_row_boardwriter" android:layout_marginRight="5dp" android:text="지누지누님"/>
+		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/board_item_row_boardwriter_imageview" android:layout_marginRight="5dp" 
+			android:visibility="gone"/>
+		<TextView android:layout_height="wrap_content" android:id="@+id/BoardDate" android:paddingRight="5dip" android:textSize="14sp" 
+			android:gravity="right" android:layout_width="fill_parent" android:layout_weight="1" android:text="07-05"></TextView>
+	</LinearLayout>
+</RelativeLayout>
+</LinearLayout>

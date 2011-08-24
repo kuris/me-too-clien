@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/titlebar_main_layout"
+  android:layout_width="fill_parent" android:layout_height="40dp" android:orientation="vertical">
+    <RelativeLayout android:id="@+id/title_relativeLayout1" android:layout_width="fill_parent" android:background="@drawable/menubar_01" android:layout_height="40dp">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/title_text_linearlayout" 
+        	android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginLeft="140dp" android:gravity="center">
+            <TextView android:id="@+id/title_textView1" android:textSize="20sp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:gravity="center" android:singleLine="true" android:layout_width="wrap_content" android:textColor="#dadada" android:text="메인타이틀바"></TextView>
+        </LinearLayout>
+        <Button android:textColor="#dadada" android:layout_width="wrap_content" android:textSize="10sp" 
+        	android:layout_centerVertical="true" android:background="@drawable/btn_title_normal" android:layout_marginLeft="5dp" 
+        	android:onClick="onLeftTitleClickButton" android:layout_height="wrap_content" android:id="@+id/title_button1" android:text="Back"></Button>
+        <!-- <Button android:id="@+id/title_up_down_button" 
+        	android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:background="@drawable/arrow_down" android:layout_toRightOf="@id/title_text_linearlayout"/> -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        	<ProgressBar android:id="@+id/title_progressbar" android:background="@drawable/btn_title_normal2" android:layout_height="40dp" android:layout_width="40dp" android:visibility="invisible"/>
+        	<Button android:textColor="#dadada" android:background="@drawable/btn_title_normal2"  android:textSize="10sp" android:text="검색" 
+	        	android:onClick="onClickSearchButton" android:id="@+id/title_search_button" android:layout_height="40dp" android:layout_width="wrap_content"
+	        	android:paddingLeft="10dp" android:paddingRight="10dp"/>
+	       	<Button android:textColor="#dadada" android:textSize="10sp" android:background="@drawable/btn_title_normal2" 
+	        	android:onClick="onClickLoginButton" android:id="@+id/title_login_button" android:text="Login" android:layout_height="40dp" android:layout_width="wrap_content"
+	        	android:paddingLeft="7dp" android:paddingRight="7dp"></Button>
+	        <Button android:textColor="#dadada" android:textSize="10sp" android:background="@drawable/btn_title_normal2" 
+	        	android:onClick="onClickEtcButton" android:id="@+id/title_etc_button" android:text="Done" android:layout_height="40dp" android:layout_width="40dp"></Button>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

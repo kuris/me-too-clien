@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content">
+<RelativeLayout android:id="@+id/board_item_row_main_layout" android:layout_width="fill_parent" 
+	android:orientation="vertical" android:layout_height="190dp">
+	<LinearLayout android:id="@+id/boardtitlerow_linearlayout1" android:layout_height="wrap_content" android:layout_width="fill_parent" 
+		android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="5dp">
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" 
+			android:text="Board Title Text String" android:id="@+id/BoardTitle" android:lines="1" 
+			android:textSize="18sp"></TextView>
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/boardtitlerow_linearlayout2" android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_below="@id/boardtitlerow_linearlayout1" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+		<ImageView android:id="@+id/board_item_imageview" android:src="@drawable/img_null" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1"/>
+		
+		<LinearLayout android:id="@+id/boardtitlerow_linearlayout3" android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical" android:gravity="right">
+			<TextView android:textColor="#FF0000" android:text="12" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/BoardCnt"></TextView>
+			<TextView android:text="Write date" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/BoardDate"></TextView>
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				android:layout_weight="1" android:text="Writer Name" android:id="@+id/BoardWriter" android:lines="1" 
+				android:textSize="14sp"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>
+</LinearLayout>
